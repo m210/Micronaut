@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: demo3
+  router:
+    static-resources:
+      swagger:
+        paths: classpath:META-INF/swagger
+        mapping: /swagger/**
+      swagger-ui:
+        paths: classpath:META-INF/swagger/views/swagger-ui
+        mapping: /swagger-ui/**
+
+exchange-client:
+  url: https://openexchangerates.org/api
+  appid: da34955fde2d4cd3815ff436c59964a9
+  base: USD
+
+gif-data-client:
+  url: https://i.giphy.com/media
+
+gif-client:
+  url: https://api.giphy.com/v1/gifs
+  api_key: 3LLokSleC1RLQ55sz5gK5z0G1Eje8WGe
+
+netty:
+  default:
+    allocator:
+      max-order: 3
